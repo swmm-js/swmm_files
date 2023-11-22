@@ -1,0 +1,281 @@
+
+  EPA STORM WATER MANAGEMENT MODEL - VERSION 5.2 (Build 5.2.1)
+  ------------------------------------------------------------
+
+  Illustration of a dry pond design in SWMM5. 
+  swmmNode_proj    utm        40                 WGS84              ft                 no_defs     
+  swmmNode_t       2071497.3431380382   8569083.858621113    1                    0                     
+  
+  *************
+  Element Count
+  *************
+  Number of rain gages ...... 8
+  Number of subcatchments ... 1
+  Number of nodes ........... 3
+  Number of links ........... 3
+  Number of pollutants ...... 0
+  Number of land uses ....... 0
+  
+  
+  ****************
+  Raingage Summary
+  ****************
+                                                      Data       Recording
+  Name                 Data Source                    Type       Interval 
+  ------------------------------------------------------------------------
+  100yr24hr_SCSType2-FL_11.4in 100yr24hr_SCSType2-FL_11.4in   INTENSITY   30 min.
+  10yr24hr_SCSType2-FL_6.24in 10yr24hr_SCSType2-FL_6.24in    INTENSITY   30 min.
+  1yr24hr_SCSType2-FL_3.91in 1yr24hr_SCSType2-FL_3.91in     INTENSITY   30 min.
+  25yr24hr_SCSType2-FL_7.95in 25yr24hr_SCSType2-FL_7.95in    INTENSITY   30 min.
+  2yr24hr_SCSType2-FL_4.32in 2yr24hr_SCSType2-FL_4.32in     INTENSITY   30 min.
+  50yr24hr_SCSType2-FL_9.54in 50yr24hr_SCSType2-FL_9.54in    INTENSITY   30 min.
+  5yr24hr_SCSType2-FL_5.24in 5yr24hr_SCSType2-FL_5.24in     INTENSITY   30 min.
+  OneInchRain          OneInchRain                    INTENSITY   60 min.
+  
+  
+  ********************
+  Subcatchment Summary
+  ********************
+  Name                       Area     Width   %Imperv    %Slope Rain Gage            Outlet              
+  -----------------------------------------------------------------------------------------------------------
+  SitePlan_Pond              1.47    142.69     58.08    0.5000 100yr24hr_SCSType2-FL_11.4in Storage             
+  
+  
+  ************
+  Node Summary
+  ************
+                                           Invert      Max.    Ponded    External
+  Name                 Type                 Elev.     Depth      Area    Inflow  
+  -------------------------------------------------------------------------------
+  STMMH_BCD2400        JUNCTION             -2.00     10.00       0.0
+  OF1                  OUTFALL              -2.50      1.50       0.0
+  Storage              STORAGE               5.00      4.00       0.0
+  
+  
+  ************
+  Link Summary
+  ************
+  Name             From Node        To Node          Type            Length    %Slope Roughness
+  ---------------------------------------------------------------------------------------------
+  Pipe             STMMH_BCD2400    OF1              CONDUIT           85.0    0.5882    0.0140
+  Spillway         Storage          STMMH_BCD2400    CONDUIT           30.0    5.0063    0.0250
+  Weir             Storage          STMMH_BCD2400    WEIR        
+  
+  
+  *********************
+  Cross Section Summary
+  *********************
+                                        Full     Full     Hyd.     Max.   No. of     Full
+  Conduit          Shape               Depth     Area     Rad.    Width  Barrels     Flow
+  ---------------------------------------------------------------------------------------
+  Pipe             CIRCULAR             1.50     1.77     0.38     1.50        1     7.48
+  Spillway         TRAPEZOIDAL          0.50     2.25     0.32     7.00        1    13.91
+  
+  
+  ****************
+  Analysis Options
+  ****************
+  Flow Units ............... CFS
+  Process Models:
+    Rainfall/Runoff ........ YES
+    RDII ................... NO
+    Snowmelt ............... NO
+    Groundwater ............ NO
+    Flow Routing ........... YES
+    Ponding Allowed ........ NO
+    Water Quality .......... NO
+  Infiltration Method ...... MODIFIED_GREEN_AMPT
+  Flow Routing Method ...... DYNWAVE
+  Surcharge Method ......... EXTRAN
+  Starting Date ............ 01/01/2019 00:00:00
+  Ending Date .............. 01/02/2019 12:00:00
+  Antecedent Dry Days ...... 0.0
+  Report Time Step ......... 00:01:00
+  Wet Time Step ............ 00:01:00
+  Dry Time Step ............ 01:00:00
+  Routing Time Step ........ 2.00 sec
+  Variable Time Step ....... NO
+  Maximum Trials ........... 8
+  Number of Threads ........ 1
+  Head Tolerance ........... 0.001500 ft
+  
+  
+  *********************
+  Control Actions Taken
+  *********************
+
+  
+  **************************        Volume         Depth
+  Runoff Quantity Continuity     acre-feet        inches
+  **************************     ---------       -------
+  Total Precipitation ......         1.400        11.400
+  Evaporation Loss .........         0.000         0.000
+  Infiltration Loss ........         0.402         3.271
+  Surface Runoff ...........         0.897         7.300
+  Final Storage ............         0.102         0.830
+  Continuity Error (%) .....        -0.008
+  
+  
+  **************************        Volume        Volume
+  Flow Routing Continuity        acre-feet      10^6 gal
+  **************************     ---------     ---------
+  Dry Weather Inflow .......         0.000         0.000
+  Wet Weather Inflow .......         0.897         0.292
+  Groundwater Inflow .......         0.000         0.000
+  RDII Inflow ..............         0.000         0.000
+  External Inflow ..........         0.000         0.000
+  External Outflow .........         0.894         0.291
+  Flooding Loss ............         0.000         0.000
+  Evaporation Loss .........         0.000         0.000
+  Exfiltration Loss ........         0.000         0.000
+  Initial Stored Volume ....         0.003         0.001
+  Final Stored Volume ......         0.006         0.002
+  Continuity Error (%) .....         0.000
+  
+  
+  ********************************
+  Highest Flow Instability Indexes
+  ********************************
+  All links are stable.
+  
+  
+  *********************************
+  Most Frequent Nonconverging Nodes
+  *********************************
+  Convergence obtained at all time steps.
+  
+  
+  *************************
+  Routing Time Step Summary
+  *************************
+  Minimum Time Step           :     2.00 sec
+  Average Time Step           :     2.00 sec
+  Maximum Time Step           :     2.00 sec
+  % of Time in Steady State   :     0.00
+  Average Iterations per Step :     2.00
+  % of Steps Not Converging   :     0.00
+  
+  
+  ***************************
+  Subcatchment Runoff Summary
+  ***************************
+  
+  ------------------------------------------------------------------------------------------------------------------------------
+                            Total      Total      Total      Total     Imperv       Perv      Total       Total     Peak  Runoff
+                           Precip      Runon       Evap      Infil     Runoff     Runoff     Runoff      Runoff   Runoff   Coeff
+  Subcatchment                 in         in         in         in         in         in         in    10^6 gal      CFS
+  ------------------------------------------------------------------------------------------------------------------------------
+  SitePlan_Pond             11.40       0.00       0.00       3.27       5.79       4.00       7.30        0.29     9.66   0.640
+  
+  
+  ******************
+  Node Depth Summary
+  ******************
+  
+  ---------------------------------------------------------------------------------
+                                 Average  Maximum  Maximum  Time of Max    Reported
+                                   Depth    Depth      HGL   Occurrence   Max Depth
+  Node                 Type         Feet     Feet     Feet  days hr:min        Feet
+  ---------------------------------------------------------------------------------
+  STMMH_BCD2400        JUNCTION     3.02     4.42     2.42     0  12:00        4.42
+  OF1                  OUTFALL      3.50     3.50     1.00     0  00:00        3.50
+  Storage              STORAGE      0.83     3.83     8.83     0  12:00        3.83
+  
+  
+  *******************
+  Node Inflow Summary
+  *******************
+  
+  -------------------------------------------------------------------------------------------------
+                                  Maximum  Maximum                  Lateral       Total        Flow
+                                  Lateral    Total  Time of Max      Inflow      Inflow     Balance
+                                   Inflow   Inflow   Occurrence      Volume      Volume       Error
+  Node                 Type           CFS      CFS  days hr:min    10^6 gal    10^6 gal     Percent
+  -------------------------------------------------------------------------------------------------
+  STMMH_BCD2400        JUNCTION      0.00     9.59     0  12:00           0       0.291       0.000
+  OF1                  OUTFALL       0.00     9.59     0  12:00           0       0.291       0.000
+  Storage              STORAGE       9.66     9.66     0  12:00       0.292       0.292      -0.000
+  
+  
+  **********************
+  Node Surcharge Summary
+  **********************
+  
+  No nodes were surcharged.
+  
+  
+  *********************
+  Node Flooding Summary
+  *********************
+  
+  No nodes were flooded.
+  
+  
+  **********************
+  Storage Volume Summary
+  **********************
+  
+  --------------------------------------------------------------------------------------------------
+                         Average     Avg  Evap Exfil       Maximum     Max    Time of Max    Maximum
+                          Volume    Pcnt  Pcnt  Pcnt        Volume    Pcnt     Occurrence    Outflow
+  Storage Unit          1000 ft³    Full  Loss  Loss      1000 ft³    Full    days hr:min        CFS
+  --------------------------------------------------------------------------------------------------
+  Storage                  1.085      12     0     0         8.616      92       0  12:00       9.59
+  
+  
+  ***********************
+  Outfall Loading Summary
+  ***********************
+  
+  -----------------------------------------------------------
+                         Flow       Avg       Max       Total
+                         Freq      Flow      Flow      Volume
+  Outfall Node           Pcnt       CFS       CFS    10^6 gal
+  -----------------------------------------------------------
+  OF1                   94.41      0.32      9.59       0.291
+  -----------------------------------------------------------
+  System                94.41      0.32      9.59       0.291
+  
+  
+  ********************
+  Link Flow Summary
+  ********************
+  
+  -----------------------------------------------------------------------------
+                                 Maximum  Time of Max   Maximum    Max/    Max/
+                                  |Flow|   Occurrence   |Veloc|    Full    Full
+  Link                 Type          CFS  days hr:min    ft/sec    Flow   Depth
+  -----------------------------------------------------------------------------
+  Pipe                 CONDUIT      9.59     0  12:00      5.43    1.28    1.00
+  Spillway             CONDUIT      6.00     0  12:00      4.93    0.43    0.66
+  Weir                 WEIR         3.59     0  12:00                      0.96
+  
+  
+  ***************************
+  Flow Classification Summary
+  ***************************
+  
+  -------------------------------------------------------------------------------------
+                      Adjusted    ---------- Fraction of Time in Flow Class ---------- 
+                       /Actual         Up    Down  Sub   Sup   Up    Down  Norm  Inlet 
+  Conduit               Length    Dry  Dry   Dry   Crit  Crit  Crit  Crit  Ltd   Ctrl  
+  -------------------------------------------------------------------------------------
+  Pipe                    1.00   0.00  0.00  0.00  1.00  0.00  0.00  0.00  0.00  0.00
+  Spillway                1.00   0.98  0.00  0.00  0.00  0.00  0.00  0.02  0.00  0.00
+  
+  
+  *************************
+  Conduit Surcharge Summary
+  *************************
+  
+  ----------------------------------------------------------------------------
+                                                           Hours        Hours 
+                         --------- Hours Full --------   Above Full   Capacity
+  Conduit                Both Ends  Upstream  Dnstream   Normal Flow   Limited
+  ----------------------------------------------------------------------------
+  Pipe                       36.00     36.00     36.00      0.23         0.35
+  
+
+  Analysis begun on:  Wed Nov 22 10:46:38 2023
+  Analysis ended on:  Wed Nov 22 10:46:38 2023
+  Total elapsed time: < 1 sec
