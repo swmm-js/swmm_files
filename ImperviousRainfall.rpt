@@ -1,0 +1,115 @@
+
+  EPA STORM WATER MANAGEMENT MODEL - VERSION 5.2 (Build 5.2.1)
+  ------------------------------------------------------------
+
+  Rainfall demo 
+  swmmNode_proj    utm        22                 WGS84              ft                 no_defs     
+  swmmNode_t       1052422.8935419386   -3417523.969502415   1                    0                     
+  
+  *************
+  Element Count
+  *************
+  Number of rain gages ...... 1
+  Number of subcatchments ... 3
+  Number of nodes ........... 3
+  Number of links ........... 0
+  Number of pollutants ...... 0
+  Number of land uses ....... 0
+  
+  
+  ****************
+  Raingage Summary
+  ****************
+                                                      Data       Recording
+  Name                 Data Source                    Type       Interval 
+  ------------------------------------------------------------------------
+  Raingage             Rainfall                       INTENSITY   60 min.
+  
+  
+  ********************
+  Subcatchment Summary
+  ********************
+  Name                       Area     Width   %Imperv    %Slope Rain Gage            Outlet              
+  -----------------------------------------------------------------------------------------------------------
+  BlockA                     1.00    100.00     30.00    1.0000 Raingage             InletA              
+  BlockB                     1.00    100.00     15.00    1.0000 Raingage             InletB              
+  BlockC                     1.00    100.00     30.00    1.0000 Raingage             InletC              
+  
+  
+  ************
+  Node Summary
+  ************
+                                           Invert      Max.    Ponded    External
+  Name                 Type                 Elev.     Depth      Area    Inflow  
+  -------------------------------------------------------------------------------
+  InletA               OUTFALL             850.00      0.00       0.0
+  InletB               OUTFALL             850.00      0.00       0.0
+  InletC               OUTFALL             850.00      0.00       0.0
+  
+  
+  ****************
+  Analysis Options
+  ****************
+  Flow Units ............... CFS
+  Process Models:
+    Rainfall/Runoff ........ YES
+    RDII ................... NO
+    Snowmelt ............... NO
+    Groundwater ............ NO
+    Flow Routing ........... NO
+    Water Quality .......... NO
+  Infiltration Method ...... MODIFIED_GREEN_AMPT
+  Surcharge Method ......... EXTRAN
+  Starting Date ............ 06/02/2018 00:00:00
+  Ending Date .............. 06/02/2018 03:00:00
+  Antecedent Dry Days ...... 0.0
+  Report Time Step ......... 00:01:00
+  Wet Time Step ............ 00:01:00
+  Dry Time Step ............ 01:00:00
+  
+  
+  **************************        Volume         Depth
+  Runoff Quantity Continuity     acre-feet        inches
+  **************************     ---------       -------
+  Total Precipitation ......         0.000         0.000
+  Evaporation Loss .........         0.000         0.000
+  Infiltration Loss ........         0.000         0.000
+  Surface Runoff ...........         0.000         0.000
+  Final Storage ............         0.000         0.000
+  Continuity Error (%) .....         0.000
+  
+  
+  **************************        Volume        Volume
+  Flow Routing Continuity        acre-feet      10^6 gal
+  **************************     ---------     ---------
+  Dry Weather Inflow .......         0.000         0.000
+  Wet Weather Inflow .......         0.000         0.000
+  Groundwater Inflow .......         0.000         0.000
+  RDII Inflow ..............         0.000         0.000
+  External Inflow ..........         0.000         0.000
+  External Outflow .........         0.000         0.000
+  Flooding Loss ............         0.000         0.000
+  Evaporation Loss .........         0.000         0.000
+  Exfiltration Loss ........         0.000         0.000
+  Initial Stored Volume ....         0.000         0.000
+  Final Stored Volume ......         0.000         0.000
+  Continuity Error (%) .....         0.000
+  
+  
+  ***************************
+  Subcatchment Runoff Summary
+  ***************************
+  
+  ------------------------------------------------------------------------------------------------------------------------------
+                            Total      Total      Total      Total     Imperv       Perv      Total       Total     Peak  Runoff
+                           Precip      Runon       Evap      Infil     Runoff     Runoff     Runoff      Runoff   Runoff   Coeff
+  Subcatchment                 in         in         in         in         in         in         in    10^6 gal      CFS
+  ------------------------------------------------------------------------------------------------------------------------------
+  BlockA                     0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  BlockB                     0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  BlockC                     0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  
+
+  Analysis begun on:  Tue Jan 16 11:37:12 2024
+  Analysis ended on:  Tue Jan 16 11:37:12 2024
+  Total elapsed time: < 1 sec
