@@ -86,8 +86,8 @@ InletC           850        FREE                        NO
 [TIMESERIES]
 ;;Name           Date       Time       Value     
 ;;-------------- ---------- ---------- ----------
-Rainfall                    0:00       0         
-Rainfall                    1:00       2         
+Rainfall                    0          2         
+Rainfall                    1          0         
 
 [REPORT]
 ;;Reporting Options
