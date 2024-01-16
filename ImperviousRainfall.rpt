@@ -71,23 +71,23 @@
   **************************        Volume         Depth
   Runoff Quantity Continuity     acre-feet        inches
   **************************     ---------       -------
-  Total Precipitation ......         0.000         0.000
+  Total Precipitation ......         0.500         2.000
   Evaporation Loss .........         0.000         0.000
-  Infiltration Loss ........         0.000         0.000
-  Surface Runoff ...........         0.000         0.000
-  Final Storage ............         0.000         0.000
-  Continuity Error (%) .....         0.000
+  Infiltration Loss ........         0.391         1.563
+  Surface Runoff ...........         0.098         0.394
+  Final Storage ............         0.011         0.044
+  Continuity Error (%) .....        -0.014
   
   
   **************************        Volume        Volume
   Flow Routing Continuity        acre-feet      10^6 gal
   **************************     ---------     ---------
   Dry Weather Inflow .......         0.000         0.000
-  Wet Weather Inflow .......         0.000         0.000
+  Wet Weather Inflow .......         0.098         0.032
   Groundwater Inflow .......         0.000         0.000
   RDII Inflow ..............         0.000         0.000
   External Inflow ..........         0.000         0.000
-  External Outflow .........         0.000         0.000
+  External Outflow .........         0.098         0.032
   Flooding Loss ............         0.000         0.000
   Evaporation Loss .........         0.000         0.000
   Exfiltration Loss ........         0.000         0.000
@@ -105,11 +105,11 @@
                            Precip      Runon       Evap      Infil     Runoff     Runoff     Runoff      Runoff   Runoff   Coeff
   Subcatchment                 in         in         in         in         in         in         in    10^6 gal      CFS
   ------------------------------------------------------------------------------------------------------------------------------
-  BlockA                     0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
-  BlockB                     0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
-  BlockC                     0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  BlockA                     2.00       0.00       0.00       1.60       0.55       0.08       0.35        0.01     0.57   0.175
+  BlockB                     2.00       0.00       0.00       1.70       0.27       0.00       0.28        0.01     0.35   0.139
+  BlockC                     2.00       0.00       0.00       1.40       0.55       0.00       0.55        0.01     0.65   0.276
   
 
-  Analysis begun on:  Tue Jan 16 11:37:12 2024
-  Analysis ended on:  Tue Jan 16 11:37:12 2024
+  Analysis begun on:  Tue Jan 16 12:08:06 2024
+  Analysis ended on:  Tue Jan 16 12:08:06 2024
   Total elapsed time: < 1 sec
